@@ -12,6 +12,7 @@
     border:5px solid lightblue;
     display:flex;
     flex-wrap: wrap;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 /*.grid div{      FIRST STEP TO SEE THE GRID AND THE BOXES*/
  /*   font-size: 25px;
@@ -55,13 +56,13 @@ div{
 .one{
     color:red;
 }
-.one{
+.two{
     color:green;
 }
-.one{
-    color:lightgreen;
+.three{
+    color:rgb(30, 40, 175);
 }
-.one{
+.four{
     color:yellow;
 }
 
