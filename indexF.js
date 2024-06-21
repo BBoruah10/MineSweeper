@@ -100,6 +100,8 @@ document.addEventListener('DOMContentLoaded',()=>{
          if(square.classList.contains('checked')||square.classList.contains('flag')) return;
          if(square.classList.contains('bomb')){
                 gameOver();
+                playAgain();
+               
          }else{
             let total=square.getAttribute("data");
             if(total!=0){
@@ -189,8 +191,19 @@ document.addEventListener('DOMContentLoaded',()=>{
                 square.innerHTML="💣";
                 square.classList.remove('bomb');
                 square.classList.add('checked');
+             
 
             }
         })
+    }
+    function playAgain(){
+        const play=document.createElement("button");
+        play.setAttribute("class","playA");
+        play.innerText="Play Again ▶️";
+        result.append(play);
+        play.addEventListener("click",()=>{
+            window.location.reload();//reloads
+        })
+        
     }
 })
